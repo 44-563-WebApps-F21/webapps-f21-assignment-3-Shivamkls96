@@ -7,21 +7,20 @@
     </head>
     <body>
          <h1>Shiva Krishna Myakala</h1>
-    </body>     
-</html>
+  
 
-<section>
+ <section>
     <h4> Coorg </h4>
 
     <P>Beaches of Coorg are famous India wide, tourists and travelers come here from the whole India I like it because of it's climatic conditions 
        and places like <b>Talakaveri, Bhagamandala, Nisargadhama, Abbey Falls, Dubare, Nagarahole National Park, Iruppu Falls, and the Tibetan Buddhist Golden Temple.</b> 
     </P>
 
-</section>
+ </section>
 
-<hr>
-<h2> Directions to travel from maryville to Coorg</h2>
-<ol>
+ <hr>
+ <h2> Directions to travel from maryville to Coorg</h2>
+ <ol>
     <li>Take flight from maryville</li>
     <li>to Chicago</li>
     <li>to delhi</li>
@@ -29,21 +28,21 @@
     <li>Take Cabs</li>
     <li>From maryville to kansas airport</li>
     <li>From bangalore take a cab to Coorg</li>
-</ol>
+ </ol>
 
-<ul>
+ <ul>
     <li> Items need to be bought while travelling to Coorg </li>
     <li> Jacket</li>
     <li> Shoes</li>
     <li> Dresses</li>
     <li> Money </li>
-</ul>
+ </ul>
 
-<section>
+ <section>
 
     <a href="aboutme.html">Meet Superhero Hanuman</a>
 
-</section>
+ </section>
 
  <hr>
         <h3>Food table</h3>
@@ -80,7 +79,32 @@
                     </tr>
                 </tbody>
              </table>
+         
+        <hr>
+        <h3>Depth First Search</h3>
+        <blackquote>Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. 
+        The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.</blackquote>
+        <br><br>
+        <a href="https://en.wikipedia.org/wiki/Depth-first_search"> Link Source </a>
+        <br><br>
+        <pre>
+            vector<vector<int>> adj; // graph represented as an adjacency list
+                int n; // number of vertices
 
+                vector<bool> visited;
+                
+                void dfs(int v) 
+                {
+                    visited[v] = true;
+                    for (int u : adj[v]) 
+                    {
+                        if (!visited[u])
+                            dfs(u);
+                    }
+                }
+        </pre>
+    </body>
+</html>
 
 
 
